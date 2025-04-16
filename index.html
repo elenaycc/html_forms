@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Elemanları Kullanımı</title>
+</head>
+<body>
+<h1>Pratik: Form Elemanları Kullanımı</h1>
+<form action="/thankyou.html" method="get">
+
+<!-- Name & Surname Input -->
+ <label for="name">Name:</label>
+<input type="text" id="name" name="name" required>
+<label for="surname">Surname:</label>  
+<input type="text" id="surname" name="surname" required><br>
+
+<!-- Email Input 
+<label for="email">E-mail:</label> 
+<input type="email" id="email" name="email" required><br>-->
+
+<!-- Password Input -->
+<label for="pwd">Password:</label>
+ <input type="password" id="pwd" name="pwd" minlength="4" required><br>
+
+<!-- Gender Input -->
+<p>Gender:</p>
+<input type="radio" id="male" name="gender" value="male" required>
+ <label for="male">Male</label><br>
+ <input type="radio" id="female"
+ name="gender" value="female" required>
+<label for="female">Female</label><br>
+        
+
+<!-- Favorite Fruit Input -->
+<label for="fruit">Select Your Favorite Fruit</label>
+<select id="fruit" name="fruit">
+  <option value="banana">Banana</option>
+  <option value="orange">Orange</option>
+  <option value="grape">Grape</option>
+  <option value="other">Other</option>
+</select><br>
+
+<!-- Message Input -->
+<label for="msg">Message:</label>
+ <textarea id="msg" name="message" rows="4" cols="50"></textarea><br>
+
+ <!-- Submit Button -->
+<input type="submit" value="Submit" >
+</form>
+
+</body>
+</html>
